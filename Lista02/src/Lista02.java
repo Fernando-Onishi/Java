@@ -31,7 +31,7 @@ public class Lista02 {
 		double dolar = 5.70;
 		System.out.print("Digite seu valor em real e receberá a conversão para dolár: ");
 		real = scanner.nextDouble();
-		double conversor = real * dolar;
+		double conversor = real / dolar;
 		System.out.println("Seu valor em dolár é: $"+conversor);
 		
 		//4
@@ -43,31 +43,31 @@ public class Lista02 {
 		System.out.print("Infomre a altura do retângulo: ");
 		altura = scanner.nextDouble();
 		double area = base * altura;
-		System.out.print("A área do retângulo é: " + area);
+		System.out.println("A área do retângulo é: " + area);
 		
 		//5
 		int idade;
 		System.out.print("Informe sua idade: ");
 		idade = scanner.nextInt();
 		double meses = idade * 12;
-		System.out.print("Você viveu "+meses+" meses");
+		System.out.println("Você viveu "+meses+" meses");
 		
 		//6
 		double minutos;
 		double seg = 60;
-		System.out.print("Informe o tempo em minutos e receberá a conversão para segundos...");
+		System.out.println("Informe o tempo em minutos e receberá a conversão para segundos...");
 		System.out.print("Informe o tempo em minutos: ");
 		minutos = scanner.nextDouble();
-		double conver = minutos/seg;
-		System.out.print("A conversão para segundos será: "+conver);
+		double conver = minutos*seg;
+		System.out.println("A conversão para segundos será: "+conver+" segundos");
 		
 		//7
 		int quant;
 		double preco;
-		System.out.println("Informe o preço e a quantidade comprada do produto que no final será exibida");
+		System.out.println("Informe o preço e a quantidade comprada do produto que no final será exibido o valor a pagar");
 		System.out.print("Informe o preço: ");
 		preco = scanner.nextDouble();
-		System.out.println("Informe a quantidade: ");
+		System.out.print("Informe a quantidade: ");
 		quant = scanner.nextInt();
 		double pagar = preco * quant;
 		System.out.println("O preço a pagar será: "+pagar);
@@ -80,17 +80,17 @@ public class Lista02 {
 		System.out.print("Digite o número de pessoas que irão dividir a conta: ");
 		pessoas = scanner.nextDouble();
 		double divi = conta / pessoas;
-		System.out.print("Cada pessoa deve pagar R$"+divi);
+		System.out.println("Cada pessoa deve pagar R$"+divi);
 		
 		//9
 		double compra;
 		double pago;
 		System.out.print("Digite o valor da compra: ");
 		compra = scanner.nextDouble();
-		System.out.println("Digite o valor pago pelo cliente");
+		System.out.print("Digite o valor pago pelo cliente: ");
 		pago = scanner.nextDouble();
-		double troco = compra - pago;
-		System.out.println("O cliente deverá receber: "+troco);
+		double troco = pago - compra;
+		System.out.println("O cliente deverá receber R$ "+troco);
 		
 		
 		
