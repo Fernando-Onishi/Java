@@ -31,7 +31,7 @@ public class Lista02 {
 		double dolar = 5.70;
 		System.out.print("Digite seu valor em real e receberá a conversão para dolár: ");
 		real = scanner.nextDouble();
-		double conversor = real / dolar;
+		double conversor = real * dolar;
 		System.out.println("Seu valor em dolár é: $"+conversor);
 		
 		//4
@@ -54,7 +54,49 @@ public class Lista02 {
 		
 		//6
 		double minutos;
+		double seg = 60;
+		System.out.print("Informe o tempo em minutos e receberá a conversão para segundos...");
 		System.out.print("Informe o tempo em minutos: ");
+		minutos = scanner.nextDouble();
+		double conver = minutos/seg;
+		System.out.print("A conversão para segundos será: "+conver);
+		
+		//7
+		int quant;
+		double preco;
+		System.out.println("Informe o preço e a quantidade comprada do produto que no final será exibida");
+		System.out.print("Informe o preço: ");
+		preco = scanner.nextDouble();
+		System.out.println("Informe a quantidade: ");
+		quant = scanner.nextInt();
+		double pagar = preco * quant;
+		System.out.println("O preço a pagar será: "+pagar);
+		
+		//8
+		double conta;
+		double pessoas;
+		System.out.print("Digite o valor total da conta: ");
+		conta = scanner.nextDouble();
+		System.out.print("Digite o número de pessoas que irão dividir a conta: ");
+		pessoas = scanner.nextDouble();
+		double divi = conta / pessoas;
+		System.out.print("Cada pessoa deve pagar R$"+divi);
+		
+		//9
+		double compra;
+		double pago;
+		System.out.print("Digite o valor da compra: ");
+		compra = scanner.nextDouble();
+		System.out.println("Digite o valor pago pelo cliente");
+		pago = scanner.nextDouble();
+		double troco = compra - pago;
+		System.out.println("O cliente deverá receber: "+troco);
+		
+		
+		
+		
+		
+		
 		
 		
 		
