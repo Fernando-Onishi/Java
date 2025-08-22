@@ -111,7 +111,7 @@ public class Lista06 {
 			System.out.println("Ajustar climatização");
 		}else {
 			System.out.println("Climatização não necessária");
-		}s
+		}
 		
 		
 		
